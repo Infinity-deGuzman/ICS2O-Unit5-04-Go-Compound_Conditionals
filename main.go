@@ -18,10 +18,10 @@ func main() {
 	fmt.Print("Day of the Week: ")
 	fmt.Scanln(&userDay)
 
-	if (userAge > 12 && userAge < 21) || (userDay == "Tuesday" || userDay == "Thursday") {
-		print("You are eligible for student pricing!")
-	} else if userAge < 5 || userAge > 95 {
+	if userAge < 5 || userAge > 95 {
 		print("You have free admission :)")
+	} else if (userAge > 12 && userAge < 21) || (userDay == "Tuesday" || userDay == "Thursday") {
+		print("You are eligible for student pricing!")
 	} else {
 		print("You must pay regular pricing.")
 	}
